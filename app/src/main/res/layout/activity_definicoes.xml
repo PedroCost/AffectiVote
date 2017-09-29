@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="affecti.affectivote.Definicoes">
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="290dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="28dp"
+        android:text="Ligar a:"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_MACAdress"
+        android:layout_width="290dp"
+        android:layout_height="44dp"
+
+        android:layout_marginLeft="8dp"
+
+        android:layout_marginTop="14dp"
+        android:contentDescription="MAC Address"
+        android:ems="10"
+        android:hint="MAC Address"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitulo"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/button_ligar"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="290dp"
+        android:layout_height="51dp"
+
+        android:layout_marginLeft="8dp"
+
+        android:layout_marginTop="16dp"
+        android:elevation="9dp"
+        android:text="Ligar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_MACAdress"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <pl.droidsonroids.gif.GifTextView
+        android:id="@+id/imageView_loading"
+        android:layout_width="43dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="25dp"
+        android:background="@mipmap/loading"
+        android:src="@mipmap/loading"
+        android:visibility="invisible"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_ligar" />
+
+    <pl.droidsonroids.gif.GifTextView
+        android:id="@+id/imageView_correct"
+        android:layout_width="43dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="25dp"
+        android:background="@mipmap/correct_symbol"
+        android:src="@mipmap/correct_symbol"
+        android:visibility="invisible"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_ligar" />
+
+    <pl.droidsonroids.gif.GifTextView
+        android:id="@+id/imageView_incorrect"
+        android:layout_width="43dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="25dp"
+        android:background="@mipmap/incorrect_symbol"
+        android:src="@mipmap/incorrect_symbol"
+        android:visibility="invisible"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_ligar" />
+
+
+</android.support.constraint.ConstraintLayout>
